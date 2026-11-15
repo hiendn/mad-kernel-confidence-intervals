@@ -1,0 +1,6 @@
+Inputs: native R simulation and fitting outputs; original packaged galaxy inputs and fitted parameters.
+Computed in R: summaries, paired comparisons, figure coordinates and density evaluations.
+No simulation, bootstrap resampling or GLD optimization is run by this script.
+Quantiles: R type=7; group membership follows maximum augmented shape >4.99.
+Requires: base R, jsonlite, cdf_pdf from mad_methods.R.
+R: R version 4.4.0 (2024-04-24)

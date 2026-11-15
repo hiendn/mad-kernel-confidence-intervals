@@ -1,0 +1,5 @@
+"population","n","contrast","R","difference","paired_mcse"
+"Shoulder",200,"Bootstrap minus KDE-R",1000,0.074,0.00863704802572034
+"Shoulder",1000,"Bootstrap minus KDE-R",1000,0.043,0.00657222901261012
+"Shoulder",1000,"Bootstrap minus KDE-half",1000,0.02,0.00544331053951817
+"Bimodal",50,"Bootstrap minus Oracle",1000,0.157,0.0121036150590432

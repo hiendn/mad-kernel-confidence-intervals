@@ -1,0 +1,286 @@
+{
+  "scope": "R contracts and CLI; no study rerun",
+  "R": "R version 4.4.0 (2024-04-24)",
+  "checks": [
+    {
+      "case": "even KDE-R finite",
+      "passed": true
+    },
+    {
+      "case": "even KDE-R report_scale",
+      "passed": true
+    },
+    {
+      "case": "even KDE-R positive_affine",
+      "passed": true
+    },
+    {
+      "case": "even KDE-half finite",
+      "passed": true
+    },
+    {
+      "case": "even KDE-half report_scale",
+      "passed": true
+    },
+    {
+      "case": "even KDE-half positive_affine",
+      "passed": true
+    },
+    {
+      "case": "even KDE-double finite",
+      "passed": true
+    },
+    {
+      "case": "even KDE-double report_scale",
+      "passed": true
+    },
+    {
+      "case": "even KDE-double positive_affine",
+      "passed": true
+    },
+    {
+      "case": "even KDE-NR finite",
+      "passed": true
+    },
+    {
+      "case": "even KDE-NR report_scale",
+      "passed": true
+    },
+    {
+      "case": "even KDE-NR positive_affine",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-R finite",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-R report_scale",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-R positive_affine",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-half finite",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-half report_scale",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-half positive_affine",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-double finite",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-double report_scale",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-double positive_affine",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-NR finite",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-NR report_scale",
+      "passed": true
+    },
+    {
+      "case": "odd KDE-NR positive_affine",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-R finite",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-R report_scale",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-R positive_affine",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-R reflection_without_endpoint_ties",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-half finite",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-half report_scale",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-half positive_affine",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-half reflection_without_endpoint_ties",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-double finite",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-double report_scale",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-double positive_affine",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-double reflection_without_endpoint_ties",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-NR finite",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-NR report_scale",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-NR positive_affine",
+      "passed": true
+    },
+    {
+      "case": "grid KDE-NR reflection_without_endpoint_ties",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-R finite",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-R report_scale",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-R positive_affine",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-R reflection_without_endpoint_ties",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-half finite",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-half report_scale",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-half positive_affine",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-half reflection_without_endpoint_ties",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-double finite",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-double report_scale",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-double positive_affine",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-double reflection_without_endpoint_ties",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-NR finite",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-NR report_scale",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-NR positive_affine",
+      "passed": true
+    },
+    {
+      "case": "galaxies KDE-NR reflection_without_endpoint_ties",
+      "passed": true
+    },
+    {
+      "case": "closed_ecdf_endpoint_tie",
+      "passed": true
+    },
+    {
+      "case": "finite_failure_contract 1",
+      "passed": true
+    },
+    {
+      "case": "finite_failure_contract 2",
+      "passed": true
+    },
+    {
+      "case": "finite_failure_contract 3",
+      "passed": true
+    },
+    {
+      "case": "finite_failure_contract 4",
+      "passed": true
+    },
+    {
+      "case": "finite_failure_contract 5",
+      "passed": true
+    },
+    {
+      "case": "invalid_input 62",
+      "passed": true
+    },
+    {
+      "case": "invalid_input 63",
+      "passed": true
+    },
+    {
+      "case": "invalid_input 64",
+      "passed": true
+    },
+    {
+      "case": "invalid_input 65",
+      "passed": true
+    },
+    {
+      "case": "invalid_input 66",
+      "passed": true
+    },
+    {
+      "case": "CLI ordinary",
+      "passed": true
+    },
+    {
+      "case": "CLI confidence_boundary",
+      "passed": true
+    },
+    {
+      "case": "CLI reporting_overflow",
+      "passed": true
+    }
+  ]
+}

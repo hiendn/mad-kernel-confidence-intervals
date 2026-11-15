@@ -1,0 +1,13 @@
+{
+  "scope": "R-only paired inference reconstructed from saved records; no simulation or fitting",
+  "results": {
+    "paired_principal_contrasts.csv": {
+      "rows": 1260,
+      "max_absolute_difference": 0
+    },
+    "paired_two_sample_contrasts.csv": {
+      "rows": 168,
+      "max_absolute_difference": 0
+    }
+  }
+}

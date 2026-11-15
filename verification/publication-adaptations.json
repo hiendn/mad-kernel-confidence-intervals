@@ -1,0 +1,50 @@
+{
+  "original_manifest_entries": 239,
+  "original_all_verified": true,
+  "original_archive_unchanged": true,
+  "original_files_copied": 215,
+  "changed_copied_files": [
+    {
+      "file": "computation/data/README.md",
+      "source_sha256": "f4907fa15b893dac623f3cd30cf217c77bc0f4763fc65ce35612428516a30bda",
+      "repository_sha256": "585d08e57f01ad381b7409dd2e29d3287b76f6e3d50efeb8c29a4fe418d07015"
+    },
+    {
+      "file": "computation/generated_r/full/restarts/pdq_restarts_config.R",
+      "source_sha256": "209302cb2b3127ecf0966e7747e1ad1035a43ba77bd3a09f211bb7bcbb8f2eaa",
+      "repository_sha256": "e28dbcc043e4e57102bd141f4a677178f81a5d8ebfe11ceb60ed158368e28c25"
+    },
+    {
+      "file": "computation/generated_r/full/restarts/pdq_restarts_config.RDS",
+      "source_sha256": "9ae9f618e78dfa4e55d587e84522f64ae83c3b688b4d01287bc0e7aadd486698",
+      "repository_sha256": "787ca34a0ed80a945aa7c4f74def6a278b7cd96480e7c2dd1c7a83ba71bb0772"
+    },
+    {
+      "file": "computation/generated_r/full/tm/tm_boundary_config.R",
+      "source_sha256": "a0ec5023973851fc5157da8b65dafd0d18b09b14b687cd03bb98440762a57734",
+      "repository_sha256": "8eeb828f4fad9b5b2a4c768cc781f321dc3923f091588bdf7325d06cca72eb37"
+    },
+    {
+      "file": "computation/generated_r/full/tm/tm_boundary_config.RDS",
+      "source_sha256": "985d8331600b228e56922d5598f8ce8ec1dd80a8877d81865ede9de6db422c9f",
+      "repository_sha256": "a0c6788cc4352c4d36aebfa2c78cca0cedb62af16acbc4647b76cb53725264c0"
+    },
+    {
+      "file": "computation/R/assets.R",
+      "source_sha256": "a7963d09b992d4e777c4656720464f12fe09309a3a5caf5cb322b53c3305cb62",
+      "repository_sha256": "63ea697a0bacff52744b85e7e4fa0de0058909c7b50d4a5d65ebf9bbee4499b1"
+    },
+    {
+      "file": "computation/R/RUNNING.md",
+      "source_sha256": "d3dade652911d6c0f91bacd4d67c44cea5d0b54a0a8a7aea7b2a57128c9901f0",
+      "repository_sha256": "81c08ca1079fe1ee0e317a14271e11b9d265ccea24f4b18a4acebb4db6ca5959"
+    },
+    {
+      "file": "VALIDATION.md",
+      "source_sha256": "7fef2fce2eb336e535564a8e8f3f9740c2e631798694f5a1cd8df0fafc3cc06d",
+      "repository_sha256": "0d380c0986dac3f438ef858af44976aa93cc2ad3a4d851fd00576bad0490e369"
+    }
+  ],
+  "exclusions": "Manuscripts/reviews, stale progress, process markers and absolute-path inventories",
+  "new_files": "Repository README/output map, saved-asset wrapper, verification scripts and reports"
+}

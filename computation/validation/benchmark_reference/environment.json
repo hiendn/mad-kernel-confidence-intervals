@@ -1,0 +1,53 @@
+{
+  "started_UTC": "2026-10-25 05:00:10 UTC",
+  "latest_invocation_started_UTC": "2026-10-25 05:02:17 UTC",
+  "R": "R version 4.4.0 (2024-04-24)",
+  "platform": "aarch64-apple-darwin20",
+  "machine": "arm64",
+  "operating_system": "Darwin 25.6.0",
+  "BLAS": "/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRblas.0.dylib",
+  "RNG": "L'Ecuyer-CMRG / Inversion / Rejection",
+  "seed": 20260917,
+  "timer": "proc.time elapsed/user.self/sys.self; system.time wraps an explicit repeated-call loop",
+  "smallest_observed_elapsed_increment_seconds": 0.0010000000000000009,
+  "concurrent_workload": "Coordinator reported four principal R simulation workers active. This benchmark adds one sequential R process; no controlled idle-machine comparison was made.",
+  "warmup": "One call per method and dataset before timing; cached weights/grid and R JIT are warm.",
+  "batch_design": {
+    "minimum_repeats": {
+      "KDE-R": 1000,
+      "GLD-pdQ": 20,
+      "GLD-TM": 3,
+      "Bootstrap399": 20
+    },
+    "minimum_elapsed_seconds": 0.10000000000000001,
+    "measured_batches": 3
+  },
+  "method_scope": {
+    "KDE-R": "kernel_estimate(x), including the local densities, algebraic variance and empirical influence-function diagnostic",
+    "GLD-pdQ": "fit_pdq(x) plus gld_estimate(x, fitted parameters)",
+    "GLD-TM": "fit_tm(x, precomputed pdQ parameters) plus gld_estimate; excludes the precomputed pdQ starting fit",
+    "Bootstrap399": "399 new n-out-of-n resample-index rows, unnormalised midpoint MADs, percentile endpoints and resample variance"
+  },
+  "resume_policy": "Reuse only measured batches at least 0.1 seconds with the same core-source and fixture hashes; extend shorter batches.",
+  "previous_benchmark_script_md5": "956c3f04d4ea11bc97e1e9e299fe9b12",
+  "source_md5": {
+    "computation/R/nelder_mead.R": "82d147eeae3c9eb2019cdf7d68762622",
+    "computation/R/mad_methods.R": "242501b6cd9a960a7a711aee1a619453",
+    "computation/R/studies.R": "fedbdf3b5e2c6dbcde65cbb78f76bb0c",
+    "computation/R/benchmark_reference.R": "8b24624ed17d1bf198ccb03d3ba2b744"
+  },
+  "fixture_md5": {
+    "Normal_200.csv": "39a97e94bc05d7e2d16262af53fc997c",
+    "Normal_1000.csv": "29a764f7089ccdf25ecfba18847d84d3",
+    "Lognormal_200.csv": "c938278e44770530f53fc545c9da1fee",
+    "Lognormal_1000.csv": "a47d4277c252012cae0e4c1ffcb6aa0c",
+    "Shoulder_200.csv": "f132ca0a3617402f730b676df76380c8",
+    "Shoulder_1000.csv": "5aba6db26bb5ea92de0e6e329356ff44",
+    "Bimodal_200.csv": "0bcc6ecc0371f6144c31ac3fb9832f23",
+    "Bimodal_1000.csv": "c9ba62232cb665a435848efa026f03ae"
+  },
+  "completed_UTC": "2026-10-25 05:02:20 UTC",
+  "measurement_batches": 96,
+  "all_measurement_batches_at_least_0_1_seconds": true,
+  "source_hashes_unchanged": true
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "figure": "coverage_shoulder",
+    "pixel_exact_100dpi": true
+  },
+  {
+    "figure": "coverage_bimodal",
+    "pixel_exact_100dpi": true
+  },
+  {
+    "figure": "galaxies_density",
+    "pixel_exact_100dpi": true
+  }
+]

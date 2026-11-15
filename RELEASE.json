@@ -1,0 +1,35 @@
+{
+  "version": "MAD-Kernel-R-Only-2026-10-25",
+  "title": "Kernel-based confidence intervals for median absolute deviations",
+  "authors": [
+    "Hien Duy Nguyen",
+    "Luke A. Prendergast"
+  ],
+  "R": "4.4.0",
+  "jsonlite": "1.8.8",
+  "master_seed": 20260917,
+  "RNG": "L'Ecuyer-CMRG/Inversion/Rejection",
+  "principal_datasets": 30000,
+  "TM_attempts": 6000,
+  "bootstrap_resamples_per_dataset": 399,
+  "TM_flagged_refits": 77,
+  "population_calibrations": 20,
+  "variance_limit_datasets": 18000,
+  "larger_sample_datasets": 5000,
+  "resolution_datasets": 2000,
+  "shoulder_added_start_datasets": 4000,
+  "completed_simulations_repeated": false,
+  "manuscript_tables": 13,
+  "manuscript_figures": 3,
+  "qualifications": [
+    "Specified procedures; native MADtests and gld comparisons unexecuted",
+    "Convergence flags and failed attempts retained",
+    "No global-optimum certificate",
+    "Monte Carlo uncertainty and paired common-prefix contrasts retained"
+  ],
+  "editorial_revision": {
+    "date": "2026-10-26",
+    "scope": "Exposition and organization; scientific methods and results unchanged",
+    "simulations_repeated": false
+  }
+}

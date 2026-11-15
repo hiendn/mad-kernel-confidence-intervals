@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,booktabs,hyperref}
+\title{A finite-bandwidth diagnostic for the normal-population experiment}
+\author{Supplementary Material S1}
+\date{R computation, 25 October 2026}
+\begin{document}
+\maketitle
+
+This Gaussian calculation examines why the leading weak-limit variance can
+be inaccurate at the bandwidths used in the normal-population experiment.
+It combines Gaussian integration with a first-order expansion of the
+estimated cutpoints and compares the resulting linear approximation with
+the full R Monte Carlo results. It does not give the exact finite-sample
+variance of the full nonlinear estimator, select a bandwidth, or correct
+interval coverage.
+
+\section*{Linear diagnostic}
+At the standard normal population, let $s=\Phi^{-1}(3/4)$,
+$d=\varphi(s)$, $x_1=-s$, $x_2=s$, and $g=-1/[2(2d)^3]$. The MAD
+influence function is
+\[
+ \phi_S(x)=\frac{1/2-1\{|x|\le s\}}{2d}.
+\]
+Write $K_h(y)=h^{-1}\varphi(y/h)$ and $\varphi_\sigma$ for the density
+of $\mathrm N(0,\sigma^2)$. Gaussian convolution gives
+\[
+ \mu_h(x)=E K_h(x-X)=\varphi_{\sqrt{1+h^2}}(x),
+\]
+and the exact covariance of the two fixed-location contributions is
+\[
+ C_{ij}(h)=\frac{\exp\{-(x_i-x_j)^2/(4h^2)\}}{2\sqrt\pi h}
+ \varphi_{\sqrt{1+h^2/2}}\!\left(\frac{x_i+x_j}{2}\right)
+ -\mu_h(x_i)\mu_h(x_j).
+\]
+The product of the two Gaussian kernels is proportional to a Gaussian
+kernel centred at $(x_i+x_j)/2$, with variance $h^2/2$. Integrating that
+product against the standard normal density gives the displayed expression.
+
+Using the first-order cutpoint displacement with the population derivatives
+$\varphi'(-s)=sd$ and $\varphi'(s)=-sd$ gives the centred linear
+contribution
+\[
+ W_h(X)=g\{K_h(-s-X)+K_h(s-X)-2\mu_h(s)\}
+        -2sdg\,\phi_S(X).
+\]
+The median displacement cancels in the sum of the two endpoint
+contributions. The MAD displacement remains. This expression combines
+exact finite-bandwidth kernel covariance with a first-order cutpoint
+expansion; it is not an exact finite-bandwidth influence representation
+of the full estimator.
+
+The limiting variance constant is
+\[
+ \mathcal A_F=\frac{2g^2d}{2\sqrt\pi}.
+\]
+At the deterministic bandwidth used in the study,
+$h=\kappa_{\mathrm N}s n^{-1/5}=n^{-1/5}$, where $\kappa_{\mathrm N}=1/s$, numerical integration gives
+the following standard deviations for the scaled linear contribution.
+\begin{center}
+\begin{tabular}{rrr}
+\toprule
+Sample size & $\{h\operatorname{Var}(W_h)/\mathcal A_F\}^{1/2}$
+            & Full-estimator standardized SD \\
+\midrule
+200 & 0.800 & 0.893 \\
+1000 & 0.826 & 0.873 \\
+5000 & 0.866 & 0.888 \\
+\bottomrule
+\end{tabular}
+\end{center}
+The integrations are split at $-s$ and $s$ to handle the jumps in the
+influence function. The largest absolute numerical value of $E W_h$ in
+these three R calculations is below $3\times10^{-16}$. The rightmost
+column gives the standardized full-estimator SDs from manuscript Table~6,
+using 3000 simulated datasets per row. The comparison at
+$n=5000$ supports the explanation that lower-order covariance and
+cutpoint terms remain relevant. Nonlinear transformation and other
+higher-order terms are not accounted for.
+
+\section*{Reproduction}
+From the replication-workspace root, run
+\begin{verbatim}
+Rscript computation/R/run.R diagnostic --mode full
+Rscript computation/R/run.R clt --mode full
+\end{verbatim}
+The first command writes deterministic Gaussian integrations to
+\path{computation/generated_r/full/diagnostic/}. The second generates
+the six normal and lognormal variance-limit designs in
+\path{computation/generated_r/full/clt/}. Their configuration records
+retain the RNG definition, master seed, stream keys and source hashes.
+The diagnostic uses native R integration and no random draws. Both calculations were executed for this release.
+\end{document}

@@ -1,0 +1,11 @@
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+_reproduced/
+_verification/
+*.RDS
+*.rds
+*.pid
+!computation/generated_r/full/**/*.RDS
+!computation/generated_r/full/**/*.rds

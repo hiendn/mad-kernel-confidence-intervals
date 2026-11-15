@@ -1,0 +1,6 @@
+source('scripts/project_tools.R')
+m<-jsonlite::fromJSON('MANIFEST_SHA256.json',simplifyVector=TRUE)
+paths<-names(m);stopifnot(length(paths)>0L,all(file.exists(paths)))
+actual<-sha256(paths);stopifnot(identical(unname(actual),unname(unlist(m))))
+stopifnot(!any(grepl('[.]py(c)?$',paths)))
+cat(length(paths),'SHA-256 entries verified; R execution and build files only.\n')

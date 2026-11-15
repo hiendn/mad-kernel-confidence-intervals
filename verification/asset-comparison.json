@@ -1,0 +1,110 @@
+{
+  "scope": "Saved-record deterministic asset rebuild; no new sampling or fitting",
+  "files": [
+    {
+      "file": "tables/table_01_display.csv",
+      "rows": 30,
+      "columns": 9,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_02_display.csv",
+      "rows": 14,
+      "columns": 6,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_03_display.csv",
+      "rows": 2,
+      "columns": 7,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_04_display.csv",
+      "rows": 4,
+      "columns": 7,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_05_display.csv",
+      "rows": 3,
+      "columns": 6,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_06_display.csv",
+      "rows": 6,
+      "columns": 6,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_07_display.csv",
+      "rows": 20,
+      "columns": 5,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_08_display.csv",
+      "rows": 6,
+      "columns": 5,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_09_display.csv",
+      "rows": 6,
+      "columns": 5,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_10_display.csv",
+      "rows": 30,
+      "columns": 9,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_11_display.csv",
+      "rows": 20,
+      "columns": 8,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_12_display.csv",
+      "rows": 10,
+      "columns": 8,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "tables/table_13_display.csv",
+      "rows": 6,
+      "columns": 7,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "mixture_figure_data.csv",
+      "rows": 48,
+      "columns": 6,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "galaxies_density_grid.csv",
+      "rows": 1000,
+      "columns": 5,
+      "maximum_absolute_numeric_difference": 3.0253577421035516e-15
+    },
+    {
+      "file": "paired_bootstrap_comparisons.csv",
+      "rows": 4,
+      "columns": 6,
+      "maximum_absolute_numeric_difference": 0
+    },
+    {
+      "file": "shoulder_selected_fit_distribution.csv",
+      "rows": 12,
+      "columns": 11,
+      "maximum_absolute_numeric_difference": 0
+    }
+  ],
+  "table_bodies": 13,
+  "figures": 3,
+  "all_character_fields_exact": true
+}

@@ -1,0 +1,7 @@
+"population","n","R","boundary_count","refit_count","all_flagged_refit","original_coverage","boundary_refit_coverage","changed_coverage_count","median_relative_variance_change","max_absolute_relative_variance_change","max_gain","expanded_bound_hits"
+"Exponential",50,200,2,2,TRUE,0.945,0.945,0,-0.0151774506293191,0.0185629216700337,0.00459798929730937,0
+"Exponential",200,200,7,7,TRUE,0.935,0.935,0,-0.00849752496565378,0.02731185513321,0.117324370379492,0
+"Exponential",1000,200,30,30,TRUE,0.925,0.925,0,-0.0318181191938165,0.0455719861492108,0.682984663996649,14
+"Pareto7",50,200,0,0,TRUE,0.89,0.89,0,NA,NA,NA,0
+"Pareto7",200,200,8,8,TRUE,0.945,0.945,0,-0.0118755409854069,0.0288937188932917,0.286017663946495,2
+"Pareto7",1000,200,30,30,TRUE,0.945,0.95,1,-0.0211210227812317,0.0357718419002563,1.83774381441526,9

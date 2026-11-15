@@ -1,0 +1,10 @@
+{
+  "scope": "Reaggregation of saved records; no sampling, bootstrap resampling, GLD fits or optimizer runs",
+  "principal_designs": 30,
+  "principal_procedure_rows": 246000,
+  "method_summaries": 270,
+  "maximum_absolute_statistical_summary_error": 5.3290705182007514e-15,
+  "maximum_absolute_timing_error_ms": 5.0022208597511053e-12,
+  "TM_boundary_refits": 77,
+  "shoulder_restart_records": 4000
+}
